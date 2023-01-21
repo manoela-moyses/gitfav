@@ -22,7 +22,7 @@
   width: 6px;
   background-color: transparent;
   border-radius: 8rem;
-  box-shadow: inset 0 0 0px 6px #4A808C;
+  box-shadow: inset 0 0 0px 6px #4a808c;
   border: solid 8px transparent;
 }
 
@@ -107,7 +107,8 @@ header {
     brightness(50%) contrast(95%);
 }
 
-.hide, .search .device {
+.hide,
+.search .device {
   display: none;
 }
 
@@ -213,6 +214,12 @@ td .remove:hover {
   width: 13.2rem;
 }
 
+@media (max-width: 1062px) {
+  .noFav {
+    padding: 21rem 2rem;
+  }
+}
+
 @media (max-width: 890px) {
   header {
     flex-direction: column;
@@ -266,9 +273,18 @@ td .remove:hover {
   td .remove {
     font-size: 1.6rem;
   }
+
+  .noFav {
+    font-size: 3.2rem;
+    gap: 3rem;
+  }
+
+  .noFav img {
+    width: 9.2rem;
+  }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 672px) {
   header {
     margin: 3rem 0 3rem;
   }
@@ -316,13 +332,21 @@ td .remove:hover {
     font-size: 1.4rem;
     padding-right: 0.8rem;
   }
+
+  .noFav {
+    font-size: 2.4rem;
+    gap: 1.6rem;
+  }
+
+  .noFav img {
+    width: 5.7rem;
+  }
 }
 
 @media (max-width: 465px) {
   .search input {
     padding: 0;
     text-align: center;
-    min-width: 24rem;
   }
 
   .search button {
@@ -347,5 +371,19 @@ td .remove:hover {
 
   td .remove {
     padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .search input {
+    min-width: 26.2rem;
+  }
+  .noFav {
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .noFav img {
+    width: 10.2rem;
   }
 }
